@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 200vh;
+    background: url('./assets/background.jpg');
+    background-size: cover;
+}
+
+.container-photos {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+h1 {
+    color: #fff;
+    text-align: center;
+}
+
+.box-photos {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    align-items: center;
+    place-items: center;
+}
+
+.polaroid-box {
+    width: 300px;
+    height: 350px;
+    background: white;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    padding-top: 15px;
+}
+
+.polaroid-photo {
+    width: 270px;
+    height: 250px;
+    background: black;
+}
