@@ -11,25 +11,45 @@ body {
     background-size: cover;
 }
 
-.container-photos {
-    width: 100%;
-    height: 100vh;
+.container-photos, .container-carta {
     display: flex;
     justify-content: center;
+}
+
+.container-carta {
+    align-items: center;
+}
+
+.container-photos {
     flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
     gap: 10px;
+}
+
+.box-text {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
 }
 
 h1 {
     color: #fff;
+    width: auto;
+    background-color: #000000b0;
     text-align: center;
+    font-style: italic;
+    
 }
 
 .box-photos {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    display: flex;
     align-items: center;
-    place-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
 }
 
 .polaroid-box {
@@ -46,4 +66,52 @@ h1 {
     width: 270px;
     height: 250px;
     background: black;
+}
+
+@media (max-width: 1620px) {
+    .polaroid-box {
+        width: 200px;
+        height: 250px;
+    }
+
+    .polaroid-photo {
+        width: 170px;
+        height: 150px;
+    }
+
+    .container-carta img {
+        width: 500px;
+    }
+}
+
+@media (max-width: 1120px) {
+    .container-carta {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 659px) {
+    .box-text {
+        order: 1;
+    }
+
+    .box-photos {
+        order: 2;
+    }
+}
+
+@media (max-width: 550px) {
+    .container-carta img {
+        width: 320px;
+    }
+
+    .box-photos {
+        margin: 0;
+    }
+}
+
+@media (max-width: 360px) {
+    .box-text h1 {
+        font-size: 28px;
+    }
 }
