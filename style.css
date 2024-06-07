@@ -66,6 +66,21 @@ h1 {
     width: 270px;
     height: 250px;
     background: black;
+    position: relative;
+    overflow: hidden;
+}
+
+.polaroid-photo img {
+    width: 100%; /* Faz a imagem preencher a largura do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+    position: absolute; /* Posiciona a imagem dentro do contêiner */
+    top: 50%; /* Centraliza verticalmente */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translate(-50%, -50%); /* Ajusta o posicionamento para que o centro da imagem fique no centro do contêiner */
+}
+
+.container-carta img {
+    width: 600px;
 }
 
 @media (max-width: 1620px) {
