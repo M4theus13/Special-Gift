@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
 }
 
 body {
@@ -66,6 +67,14 @@ h1 {
 
 }
 
+.polaroid-box p {
+    font-family: "Gloria Hallelujah", cursive;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    color: #000;
+}
+
 .polaroid-photo {
     width: 270px;
     height: 250px;
@@ -88,11 +97,25 @@ h1 {
     width: 600px;
 }
 
+.beira {
+    rotate: 13deg; 
+    margin-top: -40px;
+}
+
+.casa {
+    rotate: -20deg; 
+    margin-top: -40px;
+}
+
 @media (max-width: 1620px) {
     .polaroid-box {
         width: 200px;
         height: 250px;
         padding-top: 10px
+    }
+
+    .polaroid-box p {
+        font-size: 10px;
     }
 
     .polaroid-photo {
@@ -118,6 +141,15 @@ h1 {
 
     .box-photos {
         order: 2;
+    }
+
+    .beira {
+        rotate: 0deg;
+        margin-top: 0px;
+    }
+
+    .casa {
+        margin-top: -20px;
     }
 }
 
