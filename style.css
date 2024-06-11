@@ -57,9 +57,13 @@ h1 {
     height: 350px;
     background: white;
     display: flex;
-    align-items: start;
-    justify-content: center;
+    align-items: center;
+    justify-content: flex-start;
     padding-top: 15px;
+
+    display: flex;
+    flex-direction: column;
+
 }
 
 .polaroid-photo {
@@ -69,6 +73,7 @@ h1 {
     position: relative;
     overflow: hidden;
 }
+
 
 .polaroid-photo img {
     width: 100%; /* Faz a imagem preencher a largura do contêiner */
@@ -87,11 +92,12 @@ h1 {
     .polaroid-box {
         width: 200px;
         height: 250px;
+        padding-top: 10px
     }
 
     .polaroid-photo {
-        width: 170px;
-        height: 150px;
+        width: 180px;
+        height: 180px;
     }
 
     .container-carta img {
